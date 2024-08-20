@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .collection-header {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-pic {
+    flex: 0 0 100px;
+    margin-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    color: #0033cc;
+  }
+  
+  .header-text p {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card-subtitle {
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .card-genre {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #f0c040;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  .card-genre + .card-genre {
+    background-color: #60a3bc;
+  }
+  
+  .card-link {
+    display: inline-block;
+    color: #0033cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  
